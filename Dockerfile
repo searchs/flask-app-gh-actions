@@ -6,5 +6,5 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 5000
 COPY . .
-RUN python3 app.test.py
+RUN python app.test.py
 CMD ["flask", "run"]
